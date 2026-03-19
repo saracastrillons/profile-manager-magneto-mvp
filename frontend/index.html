@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Manager PoC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Profile Manager - Prueba de Concepto</h1>
+
+  <section>
+    <h2>1. Registro</h2>
+    <input id="name" placeholder="Nombre">
+    <input id="email" placeholder="Correo">
+    <input id="password" placeholder="Contraseña">
+    <button onclick="registerUser()">Registrarme</button>
+    <p id="registerMsg"></p>
+  </section>
+
+  <section>
+    <h2>2. Perfil</h2>
+    <input id="city" placeholder="Ciudad" value="Medellín">
+    <input id="modality" placeholder="Modalidad" value="Remoto">
+    <input id="seniority" placeholder="Seniority" value="Junior">
+    <input id="skills" placeholder="Skills separadas por coma" value="SQL,Excel">
+    <button onclick="saveProfile()">Guardar perfil</button>
+    <p id="profileMsg"></p>
+  </section>
+
+  <section>
+    <h2>3. Recomendaciones</h2>
+    <button onclick="getRecommendations()">Generar recomendaciones</button>
+    <div id="recommendations"></div>
+  </section>
+
+  <section>
+    <h2>4. Postulaciones</h2>
+    <button onclick="loadApplications()">Ver postulaciones</button>
+    <div id="applications"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
